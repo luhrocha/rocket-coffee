@@ -5,29 +5,13 @@
 }
 
 body{
-    background-color: #FFEDD5;
-}
-
-ul{
-    list-style: none;
-}
-
-h1, h2, h3, strong{
-    color: #2D2C2A;
-}
-
-p{
-    color: rgba(0, 0, 0, 0.6);
-    font-size:14px;
-}
-
-.details p{
-    line-height:21px;
+    background-color: #fdf5ef;
 }
 
 header{
     padding: 32px 0;
     text-align: center;
+    display: flex;
 }
 
 header, .content{
@@ -35,44 +19,84 @@ header, .content{
     max-width: 300px;
 }
 
-header h1{
-    margin-bottom: 4px;
+.header-logo{
+    width: 64px;
+    margin-right: 15px;
 }
 
-header h1 span{
+.header-logo img{
+    width: 54px;
+}
+
+.header-text h1{
+    margin-bottom: 4px;
+    font-size: 28px;
+    line-height: 33px;
+}
+
+.header-text h1 span{
     color: #995000;
 }
 
-.categories{
-    margin-bottom: 24px;
+h1, h3, .price{
+    font-family: 'Roboto Serif', serif;
+    color: #2D2C2A;    
+    text-transform: UPPERCASE;
 }
 
-.title-categories{
-    background-color: #FED7AA;
-    padding: 8px 16px;
-    text-align:center;
-    text-transform: UPPERCASE;
-    font-size: 18px;
-    margin-bottom: 24px;
-    line-height: 21px;
+.header-text p{
+    color: rgba(0, 0, 0, 0.7);
+    font-size:14px;
+    line-height: 16px;
+}
+
+ul{
+    list-style: none;
+    padding: 0 5px 5px;
 }
 
 ul li {
     margin-bottom: 16px;
     display: flex;
+    justify-content: space-between;
 }
 
 li .details{
-    max-width: 240px;
+    max-width: 230px;
+}
+
+.details p{
+    line-height:21px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size:14px;
+}
+
+.categories{    
+    margin-bottom: 24px;
+    background-color: #faeadd;
+    border-radius: 15px;
+}
+/*FED7AA FFEDD5*/
+
+.title-categories{
+    background-color: #68340e;
+    padding: 8px 16px;
+    text-align:center;
+    font-size: 18px;
+    margin-bottom: 24px;
+    line-height: 21px;
+    color: #fdf5ef;
 }
 
 .details h3{
     margin-bottom: 8px;
-    text-transform: UPPERCASE;
-    font-size:16px;
 }
 
-.price strong {
+.price strong, .details h3 {
     font-size: 16px;
     line-height:19px;
+}
+
+.price strong{
+    text-align: right;
 }
